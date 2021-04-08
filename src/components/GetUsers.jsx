@@ -9,7 +9,7 @@ export default class GetUsers extends Component {
 
   columns = [
     { field: "id", headerName: "ID", width: 130 },
-    { field: "firstName", headerName: "First name", width: 130 },
+    { field: "firstName", headerName: "First name", width: 200 },
     { field: "lastName", headerName: "Last name", width: 130 },
     {
       field: "email",
