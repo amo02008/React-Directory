@@ -9,15 +9,15 @@ export default class GetUsers extends Component {
 
   columns = [
     { field: "id", headerName: "ID", width: 130 },
-    { field: "firstName", headerName: "First name", width: 200 },
+    { field: "firstName", headerName: "First name", width: 130 },
     { field: "lastName", headerName: "Last name", width: 130 },
     {
       field: "email",
       headerName: "Email",
-      width: 150,
+      width: 280,
     },
-    { field: "phone", headerName: "Phone", width: 130 },
-    { field: "login", headerName: "Username", width: 130 },
+    { field: "phone", headerName: "Phone", width: 160 },
+    { field: "username", headerName: "Username", width: 130 },
     {
       field: "fullName",
       headerName: "Full name",
@@ -62,10 +62,10 @@ export default class GetUsers extends Component {
   }
 }
 
-// API.getUsers ().then (res => {
-//     console.log(res.data.results)
-//    rows.push(res.data.results)
-// })
+API.getUsers ().then (res => {
+    console.log(res.data.results)
+   
+})
 
 
 // const rows = [
